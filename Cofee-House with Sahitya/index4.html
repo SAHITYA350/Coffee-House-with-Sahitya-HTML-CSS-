@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food Order Form</title>
+	<style>
+		body {
+			font-family: Arial,system-ui;
+		background-color:antiquewhite;
+        }
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid brown;
+			border-radius: 10px;
+			box-shadow: 0 0 200px rgb(99, 53, 8);
+		}
+		        
+		.section {
+			margin-bottom: 20px;
+		}
+		
+		.label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		.input {
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		
+		.button {
+			background-color: green;
+			color:white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.button:hover {
+			background-color: brown;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	    <h1><b><i><u>Food Order Form:</i></b></h1></u>
+		
+		<!-- Food Order Section -->
+		<div class="section">
+			<h3 style="color: brown;">Order Details:</h3>
+			<form>
+				<label class="label" for="food">Select Food:</label>
+				<select class="input" id="food" name="food">
+					<option value="Pizza">Pizza</option>
+					<option value="burger">Ham-burger</option>
+					<option value="salad">Salad</option>
+                    <option value="Burger">Pasta</option>
+                    <option value="Cake">Cake</option>
+                    <option value="Pasta">Pattis</option>
+                    <option value="Noodles">Noodles</option>
+                    <option value="French-fry">French-fry</option>
+				</select>
+				
+				<label class="label" for="quantity">Quantity:</label>
+				<input class="input" type="number" id="quantity" name="quantity" min="1">
+				
+				<label class="label" for="special-instructions">Special Instructions:</label>
+				<textarea class="input" id="special-instructions" name="special-instructions"></textarea>
+			</form>
+		</div>
+		
+		<!-- Payment Section -->
+		<div class="section">
+			<h3 style="color: brown;">Payment Details:</h3>
+			<form>
+				<label class="label" for="payment-method">Payment Method:</label>
+				<select class="input" id="payment-method" name="payment-method">
+					<option value="card">Credit/Debit Card</option>
+					<option value="cash">Cash</option>
+                    <option value="cash">UPI</option>
+                    <option value="cash">Wallet</option>
+				</select>
+				
+				<label class="label" for="card-number">Card Number:</label>
+				<input class="input" type="text" id="card-number" name="card-number">
+                
+				
+				<label class="label" for="expiration-date">Expiration Date:</label>
+				<input class="input" type="date" id="expiration-date" name="expiration-date">
+			</form>
+		</div>
+          
+		
+		<!-- Delivery Section -->
+		<div class="section">
+			<h3 style="color: brown;">Delivery Details:</h3>
+			<form>
+				<label class="label" for="name">Name:</label>
+				<input class="input" type="text" id="name" name="name">
+				
+				<label class="label" for="address">Address:</label>
+				<input class="input" type="text" id="address" name="address">
+				
+				<label class="label" for="phone-number">Phone Number:</label>
+				<input class="input" type="text" id="phone-number" name="phone-number">
+			</form>
+		</div>
+		
+		<!-- Submit Button -->
+		<button class="button">Place Order</button>
+	</div>
+    <details>
+        <summary><image src="imagegif/click1.webp" width="100px" ></image></summary>
+      <a href="index.html"> <h2><b><u>Home:</u></b></h2></a>
+      </details>
+</body>
+</html>
